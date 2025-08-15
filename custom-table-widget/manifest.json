@@ -1,11 +1,1 @@
-{
-  "name": "custom-table-widget",
-  "label": "Custom Table",
-  "description": "A widget that displays attribute data from a connected data source in a table.",
-  "version": "1.0.0",
-  "exports": "src/runtime/widget.tsx",
-  "supportDataSource": true,
-  "properties": {
-    "hasSettingPage": true
-  }
-}
+{"name":"custom-table-widget","label":"Custom Table","type":"widget","version":"1.0.0","exbVersion":"1.18.0","author":"nwharney-cyber","description":"A widget that displays attribute data from a connected data source in a table.","dependency":["jimu-core","jimu-arcgis","jimu-ui","jimu-ui/advanced/table","jimu-ui/advanced/data-source-selector","jimu-theme"],"properties":{"hasSettingPage":true,"supportDataSource":true}}

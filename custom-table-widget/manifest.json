@@ -1,11 +1,18 @@
 {
   "name": "custom-table-widget",
   "label": "Custom Table",
-  "description": "A widget that displays attribute data from a connected data source in a table.",
+  "description": "A customizable table widget that clones the standard Experience Builder Table widget with configurable options.",
   "version": "1.0.0",
   "exports": "src/runtime/widget.tsx",
+  "setting": "src/setting/setting.tsx",
   "supportDataSource": true,
   "properties": {
-    "hasSettingPage": true
+    "hasSettingPage": true,
+    "supportedTypes": ["feature-layer", "web-layer", "data-source"]
+  },
+  "translatedLocales": ["en"],
+  "defaultSize": {
+    "width": 600,
+    "height": 400
   }
 }

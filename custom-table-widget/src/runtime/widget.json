@@ -1,9 +1,16 @@
 {
   "name": "custom-table-widget",
   "label": "Custom Table",
-  "description": "A baseline table widget that clones the standard Experience Builder Table functionality.",
+  "description": "A customizable table widget that clones the standard Experience Builder Table functionality with configurable options.",
   "defaultSize": {
     "width": 600,
     "height": 400
+  },
+  "defaultConfig": {
+    "selectable": true,
+    "showSelectionColumn": true,
+    "showFilter": true,
+    "showPagination": true,
+    "showToolbar": true
   }
 }

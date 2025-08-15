@@ -1,0 +1,11 @@
+{
+  "name": "custom-table-widget",
+  "label": "Custom Table",
+  "description": "A widget that displays attribute data from a connected data source in a table.",
+  "version": "1.0.0",
+  "exports": "src/runtime/widget.tsx",
+  "supportDataSource": true,
+  "properties": {
+    "hasSettingPage": true
+  }
+}

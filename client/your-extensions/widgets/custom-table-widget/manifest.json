@@ -1,0 +1,20 @@
+{
+  "name": "custom-table-widget",
+  "label": "Custom Table",
+  "type": "widget",
+  "version": "1.0.0",
+  "exbVersion": "1.18.0",
+  "author": "nwharney-cyber",
+  "description": "Cloned Table widget with configurable options.",
+  "dependency": [
+    "jimu-core",
+    "jimu-arcgis",
+    "jimu-ui",
+    "jimu-ui/advanced/table",
+    "jimu-ui/advanced/data-source-selector",
+    "jimu-theme"
+  ],
+  "properties": {
+    "supportDataSource": true
+  }
+}

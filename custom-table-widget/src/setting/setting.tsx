@@ -1,6 +1,6 @@
-import { React } from 'jimu-core'
+import { React, AllWidgetSettingProps } from 'jimu-core'
 
-export default function Setting(props) {
+export default function Setting(props: AllWidgetSettingProps<any>) {
   return (
     <div style={{ padding: 16 }}>
       <h3>Advanced Table Settings</h3>

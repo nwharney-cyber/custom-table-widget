@@ -1,4 +1,4 @@
-import { React, DataSourceComponent, DataSource } from 'jimu-core'
+import { React, DataSourceComponent, DataSource, AllWidgetProps } from 'jimu-core'
 
 /**
  * AdvancedTableWidget
@@ -9,14 +9,14 @@ import { React, DataSourceComponent, DataSource } from 'jimu-core'
  * - No custom sorting/filtering/pagination
  */
 
-export default function AdvancedTableWidget(props) {
-  const { useDataSource } = props
+export default function AdvancedTableWidget(props: AllWidgetProps) {
+  const { useDataSources } = props
 
   return (
     <div style={{ padding: 16 }}>
       <h2>Advanced Table (Standard Clone)</h2>
-      {useDataSource ? (
-        <DataSourceComponent useDataSource={useDataSource} widgetId={props.id}>
+      {useDataSources && useDataSources.length > 0 ? (
+        <DataSourceComponent useDataSource={useDataSources[0]} widgetId={props.id}>
           {(ds: DataSource) => {
             const records = ds?.getRecords() || []
             const allFields = records.length > 0 ? Object.keys(records[0].getData()) : []
